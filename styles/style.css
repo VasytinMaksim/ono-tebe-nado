@@ -3,16 +3,18 @@
 .header {
   display: grid;
   grid-template-columns: 1fr 148px 1fr;
-  padding: 92px 50px 96px 50px;
+  padding: 88px 50px 96px 50px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  
 }
 
 .header__menu {
   display: grid;
   place-content: center;
-  margin-right: 36px;
+  margin-top: 5px;
+  margin-right: 35px;
 }
 
 .header__links-list {
@@ -39,16 +41,19 @@
 }
 
 .header__address {
+  margin-bottom: 4px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-top: 5px;
+  margin-top: 6px;
+  
 }
 
 .address {
+  line-height: 24.3px;
+  letter-spacing: 0.01em;
   width: 240px;
-  height: 98px;
-  margin-top: 5px;
+  
 }
 
 /*Конец стилей для header*/
@@ -61,8 +66,8 @@
   background-position: center;
   background-size: cover;
   width: 1100px;
-  height: 757px;
-  padding: 165px 50px 179px 50px;
+  min-height: 757px;
+  padding: 165px 50px 0 50px;
 }
 
 .overlay {
@@ -81,7 +86,6 @@
   font-size: 100px;
   color: white;
   width: 1000px;
-  height: 355px;
   letter-spacing: 0.3em;
   z-index: 3;
 }
@@ -91,10 +95,12 @@
 }
 
 .aligned-text_center {
+  margin-top: 7px;
   text-align: center;
 }
 
 .aligned-text_right {
+  margin-top: 2px;
   text-align: right;
 }
 
@@ -109,14 +115,13 @@
 .cover__description {
   position:relative;
   display: flex;
-  margin-top: 147px;
+  margin-top: 131px;
   align-items: center;
   z-index: 3;
 }
 
 .cover__description-text {
   width: 637px;
-  height: 28px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 22px;
@@ -124,15 +129,16 @@
   line-height: 28px;
   color: white;
   margin-left: 28px;
+  word-spacing: 0.9em;
 }
 
-.cover__description-text__letter-spacing {
-  letter-spacing: 0.9em;
+.cover__description-text__word-spacing{
+  word-spacing: 0.8em;
 }
 
 .bet-button {
   width: 256px;
-  height: 51px;
+  min-height: 51px;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-size: 22px;
@@ -142,6 +148,7 @@
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0);
   margin-left: 79px;
+  cursor: pointer;
 }
 
 /*конец стилей для секции cover*/
@@ -149,8 +156,8 @@
 /*Начало стилей для секции lots*/
 
 .lots {
+  position: relative;
   width: 1052px;
-  height: 692px;
   margin: 179px 24px 0 24px;
 }
 
@@ -172,13 +179,16 @@
 .lots__card-list-item {
   list-style: none;
   width: 334px;
-  height: 563px;
 }
 
 .card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 334px;
-  height: 563px;
+  min-height: 563px;
+  margin-bottom: 30px;
   padding: 51px 40px;
   background-position: center;
   background-size: cover;
@@ -208,22 +218,19 @@
 }
 
 .card__text {
-  position: absolute;
+  position: relative;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: white;
   z-index: 1;
-  bottom: 48px;
-  padding-right: 40px;
 }
 
 .lots__look-more-link {
-  position:absolute;
+  
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 30px;
   margin-left: 40px;
 }
 
@@ -235,7 +242,6 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   width: 1052px;
-  height: 595px;
   margin: 146px 24px 0 24px;
 }
 
@@ -260,7 +266,8 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 40px;
-  margin-top: 136px;
+  margin-top: 134px;
+  margin-left: 24px;
   margin-bottom: 100px;
 }
 
@@ -271,6 +278,7 @@
   line-height: 24px;
   display: grid;
   gap: 24px;
+  margin-left: 24px;
 }
 
 /*конец стилей для секции about*/
@@ -281,7 +289,6 @@
 display: flex;
 justify-content: space-between;
 width: 1000px;
-height: 98px;
 margin: 180px 50px 88px 50px;
 font-family: "Raleway", sans-serif;
 font-weight: 400;
@@ -290,6 +297,7 @@ text-align: left;
 }
 
 .footer__menu {
+  margin-top: 3px;
   text-align: center;
 }
 
@@ -303,7 +311,6 @@ text-align: left;
 
 .footer__social-list {
   width: 240px;
-  height: 48px;
 }
 
 .footer__social-list-item {
@@ -316,11 +323,6 @@ text-align: left;
   height: 48px;
   border-radius: 50%;
   list-style: none;
-}
-
-.footer__social-icon {
-  background-position: center;
-  background-size: cover;
 }
 
 /*конец стилей для footer*/
